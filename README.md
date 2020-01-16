@@ -1,4 +1,4 @@
-Azure CLI Scripts to create demonstration instances
+## Azure CLI Scripts to create demonstration instances
 
 Assumes that you have an account on Azure, and have installed the Azure CLI onto your local machine.
 
@@ -14,4 +14,12 @@ After the VM has been created, you can SSH to it:
 
 ```bash
 ssh ${VM_ADMIN_USERNAME}@${VM_IP_ADDR}
+```
+
+### Start and Stop VM commands
+
+```bash
+az vm start --resource-group $RESOURCE_GROUP --name $VM_NAME
+az vm stop --resource-group $RESOURCE_GROUP --name $VM_NAME
+az vm deallocate --resource-group $RESOURCE_GROUP --name $VM_NAME
 ```

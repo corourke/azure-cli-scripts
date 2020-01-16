@@ -33,7 +33,7 @@ az network nsg create --resource-group $RESOURCE_GROUP --name $NET_SEC_GROUP
 
   # Open Required Ports
   priority=200 # priority is kind of arbitrary, but must be unique per port
-  for port in 22 80 443 4040 5436 6060 6443 7077 7078 7777 8080 8443 9091 9092
+  for port in 22 80 3306 443 4040 5436 6060 6443 7077 7078 7777 8080 8443 9091 9092
   do
     az network nsg rule create \
       --resource-group $RESOURCE_GROUP \
