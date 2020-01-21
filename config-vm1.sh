@@ -10,7 +10,7 @@
 # Standard_D8s_v3 -- 8 vCPU, 32GB RAM, 64GB storage
 : "${MACHINE_SIZE:=Standard_D4s_v3}"
 
-: "${VM_NAME:=i${RESOURCE_GROUP}_vm}"
+: "${VM_NAME:=${RESOURCE_GROUP}_vm}"
 : "${VM_ADMIN_USERNAME:=vm_admin}"
 : "${VM_ADMIN_PASSWORD:=vm_admin!234}"
 
