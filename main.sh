@@ -88,6 +88,7 @@ VM_IP_ADDR=$(az vm list-ip-addresses \
 # SSH into the VM
 printf -- "\n${_GREEN}SSH into the VM using:\nssh ${VM_ADMIN_USERNAME}@${VM_DNS}${_NOCOLOR}\n\n"
 
+# Skip the rest of this if you don't want a file share
 Status "Create shared storage account"
 #STORAGE_NAME=${RESOURCE_GROUP}storage
 az storage account create \
